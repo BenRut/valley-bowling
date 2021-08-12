@@ -18,7 +18,7 @@ body.homepage {
 		flex-flow: column;
 		height: 100vh;
 		@media only screen and (min-width: $mq-mobile-min) {
-			max-width: 44%;
+			max-width: 510px;
 		}
 	}
 	&__top {

@@ -14,6 +14,7 @@ body.gamepage {
 		height: 280px;
 	}
 	#game {
+		border: solid $color-white 3px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
