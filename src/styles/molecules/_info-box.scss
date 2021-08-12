@@ -1,0 +1,53 @@
+.info-box {
+	text-align: center;
+	position: relative;
+	padding: 20px;
+	border: solid 2px $color-red;
+	border-radius: 15px;
+	background-color: $color-white;
+	h3 {
+		font-family: $primary-font;
+		font-weight: 700;
+		font-style: normal;
+		color: $color-red;
+		font-size: 1rem;
+	}
+	&__prize {
+		text-transform: uppercase;
+		width: 198px;
+		font-family: $secondary-font;
+		font-weight: 700;
+		font-style: normal;
+		color: $color-white;
+		background-color: $color-red;
+		position: absolute;
+		border-radius: 15px;
+		padding: 6px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -20px;
+	}
+	&__prize::before {
+		display: block;
+		height: 44px;
+		width: 70px;
+		content: '';
+		position: absolute;
+		background: url(../images/star.svg) no-repeat center;
+		left: -8px;
+		top: -14%;
+		transform: scaleX(-1);
+	}
+	&__prize::after {
+		display: block;
+		height: 44px;
+		width: 70px;
+		content: '';
+		position: absolute;
+		background: url(../images/star.svg) no-repeat center;
+		top: -14%;
+		transform: translateY(50%);
+		right: -8px;
+		transform: scaleX(-1);
+	}
+}

@@ -1,0 +1,20 @@
+ .social {
+    display: flex;
+    align-items: center;
+
+    a {
+        display: block;
+        width: 15px;
+        height: 15px;
+        font-size: 0;
+        margin-left: 18px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .facebook-link { background-image: url(media/header/facebook_blue.svg) }
+    .twitter-link { background-image: url(media/header/twitter_blue.svg) }
+    .instagram-link { background-image: url(media/header/instagram_blue.svg) }
+}

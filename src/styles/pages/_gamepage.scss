@@ -1,0 +1,66 @@
+body.gamepage {
+	background: url(../images/mobile-game-background.svg) no-repeat center center;
+	background-size: cover;
+	@media only screen and (min-width: $mq-tablet-min) {
+		background: url(../images/desktop-game-background.svg) no-repeat center
+			center;
+		background-size: cover;
+	}
+}
+
+.gamepage {
+	h1 {
+		width: 400px;
+		height: 280px;
+	}
+	#game {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: red;
+		min-height: 531px;
+		max-height: 531px;
+		min-width: 300px;
+		max-width: 300px;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 40px;
+		@media only screen and (min-width: 410px) {
+			min-height: 695px;
+			max-height: 695px;
+			min-width: 392px;
+			max-width: 392px;
+		}
+		@media only screen and (min-width: $mq-tablet-min) {
+			margin-bottom: 0px;
+		}
+	}
+	h1 {
+		display: none;
+		@media only screen and (min-width: $mq-tablet-min) {
+			display: block;
+			margin-bottom: 50px;
+		}
+	}
+	&__wrapper {
+		min-height: 100vh;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@media only screen and (min-width: $mq-tablet-min) {
+			flex-direction: row-reverse;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+	}
+	&__content {
+		height: 450px;
+		margin-bottom: 50px;
+		max-width: 550px;
+		@media only screen and (min-width: $mq-tablet-min) {
+			margin-right: 50px;
+		}
+	}
+}

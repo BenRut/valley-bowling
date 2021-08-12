@@ -1,0 +1,34 @@
+// Container max width
+
+$container-max-width: 1150px;
+$container-min-width: 1151px;
+$container-padding: 0 2rem;
+
+$block-padding-mobile: 1rem 0;
+$block-padding-tablet: 1.5rem 0;
+$block-padding-desktop: 2rem 0;
+
+$inner-container-padding-mobile: 4rem;
+$inner-container-padding-tablet: 4rem;
+$inner-container-padding-desktop: 4rem;
+
+$main-line-height: 1.7;
+
+// Fonts
+$primary-font: montserrat, sans-serif;
+$secondary-font: rockwell, sans-serif;
+
+// Colours
+
+$color-white: #ffffff;
+$color-black: #1d1d1b;
+$color-red: #73160d;
+
+// Breakpoints
+
+$mq-mobile-min: 510px;
+$mq-mobile-max: 509px;
+$mq-tablet-min: 768px;
+$mq-tablet-max: 767px;
+$mq-desktop-min: 1200px;
+$mq-desktop-max: 1199px;

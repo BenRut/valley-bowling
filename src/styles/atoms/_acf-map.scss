@@ -1,0 +1,9 @@
+// ACf Map
+
+.acf-map {
+    height: 300px;
+
+    @media screen and (min-width: $mq-tablet-min){  height: 500px; }
+
+
+}

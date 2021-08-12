@@ -1,0 +1,23 @@
+// Form SCSS
+
+input[type=text],
+input[type=email],
+textarea {
+    border: 0;
+    padding: 8px;
+    width: 100%;
+    border-radius: 0;
+    @media screen and (min-width: $mq-tablet-min){  width: inherit; }
+}
+textarea {
+    width: 100%;
+}
+input[type=submit] {
+    appearance: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+
+}

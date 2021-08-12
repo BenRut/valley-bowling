@@ -1,0 +1,45 @@
+/*!
+Theme Name: BWSC
+Theme URI: https://bewonder.co.uk/
+Author: Bewonder
+Author URI: https://bewonder.co.uk/
+Description: Custom theme developed for BWSC
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: bewonder
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+
+// Core
+@import 'core/normalise';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/utils';
+@import 'core/animations';
+@import 'core/social';
+@import 'core/fonts';
+@import 'atoms/aos';
+
+// Templates
+
+// Pages
+@import 'pages/main';
+@import 'pages/homepage';
+@import 'pages/gamepage';
+
+// Organisms
+@import 'organisms/header';
+@import 'organisms/footer';
+
+// Molecules
+
+@import 'molecules/info-box.scss';
+@import 'molecules/button.scss';
+
+// Templates
+
+// Atoms
+@import 'atoms/button';
+@import 'atoms/form';

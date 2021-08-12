@@ -1,0 +1,71 @@
+body.homepage {
+	@media only screen and (min-width: $mq-mobile-min) {
+		background: url(../images/desktop-background.svg) no-repeat center center;
+		background-size: cover;
+		max-height: 100vh;
+	}
+}
+
+.homepage {
+	h1 {
+		margin-top: 30px;
+	}
+	h2 {
+		margin-bottom: 50px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-flow: column;
+		height: 100vh;
+		@media only screen and (min-width: $mq-mobile-min) {
+			max-width: 44%;
+		}
+	}
+	&__top {
+		background: url(../images/mobile-home-background.svg) no-repeat top center;
+		background-size: cover;
+		min-height: 425px;
+		flex: 1 0 425px;
+		@media only screen and (min-width: $mq-mobile-min) {
+			align-items: flex-end;
+			display: flex;
+			background: none;
+			flex: 1 0 auto;
+			min-height: initial;
+		}
+	}
+	&__floor {
+		background: url(../images/mobile-home-floor.svg) no-repeat top center;
+		background-size: cover;
+		flex: 1 1 auto;
+		position: relative;
+		box-sizing: border-box;
+		height: max-content;
+		@media only screen and (min-width: $mq-mobile-min) {
+			background: none;
+		}
+	}
+	&__floor::after {
+		display: block;
+		height: 249px;
+		width: 244px;
+		content: '';
+		position: absolute;
+		background: url(../images/mobile-bowling-ball.svg) no-repeat center;
+		top: -197px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+		@media only screen and (min-width: $mq-mobile-min) {
+			display: none;
+		}
+	}
+	&__content {
+		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 50px;
+		@media only screen and (min-width: $mq-mobile-min) {
+			padding-top: 0;
+		}
+	}
+}
